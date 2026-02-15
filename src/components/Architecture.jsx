@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { architecturePatterns } from '../data/content';
+import BillingArchitectureDiagram from './BillingArchitectureDiagram';
 
 const Architecture = () => {
     return (
@@ -18,7 +19,7 @@ const Architecture = () => {
                     <div className="w-20 h-1 bg-gradient-to-r from-accent-teal to-accent-blue mx-auto mb-12"></div>
                 </motion.div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid md:grid-cols-2 gap-6 mb-16">
                     {architecturePatterns.map((pattern, index) => (
                         <motion.div
                             key={index}
@@ -53,21 +54,23 @@ const Architecture = () => {
                     ))}
                 </div>
 
-                {/* Architecture Diagram Placeholder */}
+                {/* Animated Architecture Diagram */}
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.4 }}
-                    className="mt-12 glass-light dark:glass p-8 rounded-xl text-center"
+                    transition={{ duration: 0.6 }}
+                    className="space-y-8"
                 >
-                    <h3 className="text-xl font-bold mb-4">Microservices Architecture Diagram</h3>
-                    <div className="bg-gradient-to-br from-accent-teal/20 to-accent-blue/20 rounded-lg p-12 border-2 border-dashed border-accent-teal/30">
-                        <p className="text-gray-600 dark:text-gray-400">
-                            Interactive architecture diagram showcasing microservices communication,
-                            API Gateway routing, service discovery, and distributed logging flow.
+                    <div className="text-center">
+                        <h3 className="text-2xl font-bold mb-2">Microservices <span className="gradient-text">Architecture Flow</span></h3>
+                        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                            Visualizing the end-to-end flow of our billing service, from client requests
+                            through API Gateway to microservices, storage, and centralized observability.
                         </p>
                     </div>
+
+                    <BillingArchitectureDiagram />
                 </motion.div>
             </div>
         </section>

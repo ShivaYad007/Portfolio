@@ -35,8 +35,8 @@ const Navigation = () => {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-white/80 dark:bg-dark-bg/80 backdrop-blur-lg shadow-lg'
-                    : 'bg-transparent'
+                ? 'bg-white/80 dark:bg-dark-bg/80 backdrop-blur-lg shadow-lg'
+                : 'bg-transparent'
                 }`}
         >
             <div className="container-custom">
@@ -45,9 +45,13 @@ const Navigation = () => {
                     <a
                         href="#hero"
                         onClick={(e) => scrollToSection(e, '#hero')}
-                        className="text-xl md:text-2xl font-bold gradient-text cursor-pointer"
+                        className="flex items-center gap-2 cursor-pointer group"
                     >
-                        &lt;SY /&gt;
+                        <img
+                            src="files/mylogo.png"
+                            alt="SKY"
+                            className="w-20 h-20 transition-transform duration-300 group-hover:scale-110"
+                        />
                     </a>
 
                     {/* Desktop Navigation */}

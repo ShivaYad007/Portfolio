@@ -86,23 +86,6 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            {/* Links */}
-                            <div className="flex gap-4">
-                                <a
-                                    href={project.github}
-                                    className="flex items-center gap-2 text-sm font-semibold text-accent-teal hover:text-accent-blue transition-colors"
-                                >
-                                    <Github className="w-4 h-4" />
-                                    GitHub
-                                </a>
-                                <a
-                                    href={project.demo}
-                                    className="flex items-center gap-2 text-sm font-semibold text-accent-teal hover:text-accent-blue transition-colors"
-                                >
-                                    <ExternalLink className="w-4 h-4" />
-                                    Live Demo
-                                </a>
-                            </div>
                         </motion.div>
                     ))}
                 </div>

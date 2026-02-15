@@ -5,9 +5,9 @@ export const personalInfo = {
     email: "shivakumar.yadav787@gmail.com",
     phone: "9493744357",
     location: "Hyderabad, India",
-    linkedin: "https://linkedin.com/in/shivakumar-yadav",
-    github: "https://github.com/shivakumar-yadav",
-    resumeUrl: "/resume.pdf"
+    linkedin: "https://www.linkedin.com/in/shivayadav007/",
+    github: "https://github.com/ShivaYad007",
+    resumeUrl: "files/Shivakumar_Yadav_Java_Backend_Developer_3.6Y.pdf"
 };
 
 export const about = {
@@ -20,7 +20,7 @@ export const about = {
     ],
     stats: [
         { label: "Years Experience", value: "3.6+" },
-        { label: "Projects Delivered", value: "10+" },
+        { label: "Prudction Issues Fixed", value: "50+" },
         { label: "Technologies", value: "20+" },
         { label: "Code Reviews", value: "100+" }
     ]
@@ -117,8 +117,7 @@ export const projects = [
             "Production issue monitoring and resolution"
         ],
         techStack: ["Spring Boot", "Microservices", "MySQL", "Redis", "REST APIs", "JWT", "ELK Stack", "Swagger"],
-        github: "#",
-        demo: "#"
+
     },
     {
         name: "CRM & Inventory Management System",
@@ -134,8 +133,6 @@ export const projects = [
             "Optimized SQL queries for performance"
         ],
         techStack: ["Spring Boot", "MySQL", "Spring Security", "REST APIs", "Swagger", "Postman"],
-        github: "#",
-        demo: "#"
     }
 ];
 

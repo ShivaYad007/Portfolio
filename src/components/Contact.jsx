@@ -115,7 +115,7 @@ const Contact = () => {
 
                             <div className="space-y-4">
                                 <a
-                                    href={`mailto:${personalInfo.email}`}
+                                    href={`mailto:${personalInfo.email}?subject=Portfolio Inquiry from Website`}
                                     className="btn-primary w-full text-white flex items-center justify-center gap-2"
                                 >
                                     <Send className="w-5 h-5" />
@@ -133,7 +133,7 @@ const Contact = () => {
 
                             <div className="mt-6 p-4 bg-gradient-to-r from-accent-teal/10 to-accent-blue/10 rounded-lg border border-accent-teal/30">
                                 <p className="text-sm text-center">
-                                    <span className="font-semibold">Open to:</span> Full-time positions, Contract work, Consulting
+                                    <span className="font-semibold">Open to:</span> Full-time positions (Hyrbid/WFH)
                                 </p>
                             </div>
                         </motion.div>

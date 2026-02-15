@@ -25,6 +25,7 @@ export default {
                     teal: '#14b8a6',
                     blue: '#3b82f6',
                     green: '#10b981',
+                    red: '#F43F5E',
                 },
                 dark: {
                     bg: '#0a0e27',
